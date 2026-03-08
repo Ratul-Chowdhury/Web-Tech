@@ -1,0 +1,96 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  width: 440px;
+}
+
+.form-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.form-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-container td {
+  padding: 5px 4px;
+  vertical-align: top;
+}
+
+.form-container label {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  font-size: 13px;
+  outline: none;
+}
+
+.form-container textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  font-size: 13px;
+  height: 80px;
+  resize: vertical;
+  outline: none;
+}
+
+.form-container textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-container #errorMsg {
+  color: red;
+  font-size: 11px;
+  margin-top: 4px;
+  display: none;
+  text-align: center;
+}
+
+.form-container button[type="submit"] {
+  display: block;
+  margin: 10px auto 0;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 28px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #444;
+}

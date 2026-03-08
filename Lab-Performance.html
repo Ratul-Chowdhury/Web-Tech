@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us Form</title>
+  <link rel="stylesheet" href="Lab-Performance.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact us</h2>
+
+    <table>
+      <tr>
+        <td>
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" />
+        </td>
+        <td>
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </td>
+        <td>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="message">What Do You Have In Mind</label>
+          <textarea id="message" name="message" placeholder="Please enter query..."></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p id="errorMsg">Field Value need to be filled up</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button" onclick="handleSubmit()">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="Lab-Performance.js"></script>
+</body>
+</html>

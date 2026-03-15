@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Management Page</title>
+  <link rel="stylesheet" href="../Design/Style.css" />
+    <script src="../JS/Validation.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Product Management</h1>
+    <p class="subtitle">Calculate your 30-day product cost</p>
+
+    <div class="form-box">
+
+      <label for="unitPrice">Unit Price (Fixed)</label>
+      <input type="number" id="unitPrice" value="1000" readonly />
+      <p class="hint">This price is fixed at 1000.</p>
+
+      <label for="days">Number of Days (Fixed)</label>
+      <input type="number" id="days" value="30" readonly />
+      <p class="hint">Always calculated for 30 days.</p>
+
+      <hr />
+
+      <label for="quantity">Quantity Per Day</label>
+      <input type="number" id="quantity" placeholder="Enter quantity (e.g. 5)" min="0" />
+      <p id="errorMsg" class="error">Quantity cannot be negative. Reset to 0.</p>
+
+      <div class="formula">
+        Formula: Total Price = Unit Price x Quantity Per Day x 30
+      </div>
+
+      <label for="totalPrice">Total Price (30 Days)</label>
+      <input type="text" id="totalPrice" value="0" readonly class="total" />
+
+      <button id="calculateBtn">Calculate Total Price</button>
+
+    </div>
+
+    <p class="footer-text">Enter a daily quantity above to see the 30-day total.</p>
+
+  </div>
+
+</body>
+</html>
